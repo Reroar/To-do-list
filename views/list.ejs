@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="todolist-v1\public\css\styles.css">
+</head>
+<body>
+   <div class="box" id="heading">
+  <h1 > To-do Lists for  <%= day %> </h1>
+   </div>
+  
+  <div class="box">
+    
+    <% for ( var i=0; i<newListItems.length; i++){%>
+      <div class="item">
+        <input type="checkbox" name="" id="">
+        <p> <%= newListItems[i] %> </p>
+      </div>
+    <%}%>
+  
+</div>
+  
+<div class="box">
+  <form action="/" method="post">
+    <input type="text" name="in1" placeholder="Enter Here">
+      <button type="submit">+</button>
+    
+   
+  </form>
+</div>
+    
+
+</body>
+</html>
