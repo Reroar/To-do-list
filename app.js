@@ -16,7 +16,7 @@ app.get("/", function(req,res){
 
     let thisday = date;
 
-    res.render("list", {day: thisday ,  newListItems: inputs});
+    res.render("index", {day: thisday ,  newListItems: inputs});
 
 });
 
