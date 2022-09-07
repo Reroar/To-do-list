@@ -1,23 +1,27 @@
 :root{
-  --color: #A683E3;
+  --color:#F1A661;
 }
 
 html {
     background-color: #E4E9FD;
-    background-image: -webkit-linear-gradient(65deg, var(--color) 50%, #E4E9FD 50%);
+    background-image: -webkit-linear-gradient(65deg, var(--color) 50%, #FFD8A9 50%);
     min-height: 1000px;
-    font-family: 'helvetica neue';
+    font-family: 'Dosis', sans-serif;
   }
   
   h1 {
     color: #fff;
     padding: 10px;
   }
+
+  p{
+   font-family: 'Roboto Condensed', sans-serif;;
+  }
   
   .box {
     max-width: 400px;
     margin: 50px auto;
-    background: white;
+    background: #FDEEDC;
     border-radius: 5px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
   }
@@ -45,6 +49,11 @@ html {
   
   input[type="checkbox"] {
     margin: 20px;
+    background-color: #F1A661;
+  }
+
+  .item input:checked~.check {
+    background-color: #F1A661;
   }
   
   p {
@@ -79,8 +88,8 @@ html {
     text-align: center;
     height: 60px;
     top: 10px;
-    border: none;
     background: transparent;
+    border: none;
     font-size: 20px;
     font-weight: 200;
     width: 313px;
