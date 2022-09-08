@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const date = require(__dirname + "/newDate.js")
+const port = process.env.PORT || 5000
 
 
 const app = express();
@@ -28,6 +29,6 @@ app.post("/", function(req,res){
     res.redirect("/");
 })
 
-app.listen(3000, function(){
+app.listen(port, function(){
     console.log("Everythong is good and working on port 3000");
 }) ;
