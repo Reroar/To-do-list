@@ -79,7 +79,14 @@ html {
     font-size: 30px;
     padding-bottom: 5px;
     border-width: 0;
+    position: relative;
+    top: 2px;
    
+}
+
+button:hover {
+  cursor: pointer;
+  color: #852999;
 }
 
 
